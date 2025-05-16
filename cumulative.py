@@ -7,7 +7,7 @@ sheet = workbook.active
 
 
 headers = [cell.value.strip().lower() for cell in next(sheet.iter_rows(min_row=1, max_row=1))]
-print(headers)
+
 
 parent_org_idx = headers.index("parent org")
 brand_idx = headers.index("brand")
